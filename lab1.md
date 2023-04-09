@@ -1,21 +1,17 @@
 # Lab Report 1
 ## How to remotely connect to your course specific account:
 ***
-**Installations**
 
-
-First you will need to install Visual Studio Code in order to... Go to [https://code.visualstudio.com/download](https://code.visualstudio.com/download) to download and install it (I already have VS code on my computer so I skipped this step).
-
-
+**Installations**  
+  First you will need to install Visual Studio Code in order to... Go to [https://code.visualstudio.com/download](https://code.visualstudio.com/download) to download and install it (I already have VS code on my computer so I skipped this step).
 My editor looks like this when it is opened:
-![Image](VScodeSC.png)
-You will also need to instal Git. My computer runs windows so I installed git for windows at [https://gitforwindows.org/](https://gitforwindows.org/).
+  ![Image](VScodeSC.png)
+  
+  You will also need to instal Git. My computer runs windows so I installed git for windows at [https://gitforwindows.org/](https://gitforwindows.org/).
 On the set up wizard, I changed the default editor to VS code, besides that, keep all the preferences to the default settings.
-![Image](GitInstall.png)
+  ![Image](GitInstall.png)
 ---
 **Remotely connecting:**
-
-
 To remotely connect to your course specific account, first set Git Bash to be your default terminal. I followed the steps from [Stackoverflow](https://stackoverflow.com/a/50527994), to do this.
 Now open a new terminal and it should be a Git Bash terminal.
 
