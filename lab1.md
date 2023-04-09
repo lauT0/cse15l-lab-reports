@@ -16,6 +16,7 @@ Now open a new terminal and it should be a Git Bash terminal.
 
   Then type: ssh cs15lsp23zz@ieng6.ucsd.edu, but with your account name. It will prompt you for a password, type your password in to log in. Mine looks like this:
   ![Image](terminalSC1.png)
+  
   It might ask you if you want to continue to log in, which you will type yes. Mine did not ask me this question.
   
   **Run some commands:**
