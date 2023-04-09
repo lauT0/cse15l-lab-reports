@@ -11,7 +11,7 @@ On the set up wizard, I changed the default editor to VS code, besides that, kee
   ![Image](GitInstall.png)
   
 ***
-  **Remotely connecting**
+  **Remotely connecting**  
   To remotely connect to your course specific account, first set Git Bash to be your default terminal. I followed the steps from [Stackoverflow](https://stackoverflow.com/a/50527994), to do this.
 Now open a new terminal and it should be a Git Bash terminal.
 
@@ -21,5 +21,8 @@ Then type: ssh cs15lsp23zz@ieng6.ucsd.edu, but with your account name. It will p
   It might ask you if you want to continue to log in, which you will type yes. Mine did not ask me this question.
   
 ***
-  **Run some commands**
-  Now you should be able to run some commands.
+  **Run some commands**  
+Now you should be able to run some commands. Here are some commands I ran:  
+1) pwd (tells you what directory your currently in)
+2) ls (tells you what is in the directory)
+3) cd per15 (changes the directory to per15)  
