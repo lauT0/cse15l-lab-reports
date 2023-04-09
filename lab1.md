@@ -1,5 +1,6 @@
 # Lab Report 1
 ## How to remotely connect to your course specific account:
+***
 **Installations**
 First you will need to install Visual Studio Code in order to... Go to [https://code.visualstudio.com/download](https://code.visualstudio.com/download) to download and install it (I already have VS code on my computer so I skipped this step).
 My editor looks like this when it is opened:
