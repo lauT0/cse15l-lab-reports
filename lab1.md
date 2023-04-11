@@ -33,3 +33,4 @@ Note: ieng6 wasn't letting me log in anymore, so I used ieng6-202 to remote conn
 4) cd per15 (changes the directory to perl5)  
 5) ls perl5 (tells us the file names in the directory, there's nothing in the directory so nothing happened)  
 ![Image](terminalSC6.png)
+star
