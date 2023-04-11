@@ -23,6 +23,13 @@ Then type: ssh cs15lsp23zz@ieng6.ucsd.edu, but with your account name. It will p
 ***
   **Run some commands**  
 Now you should be able to run some commands. Here are some commands I ran:  
-1) pwd (tells you what directory your currently in)
-2) ls (tells you what is in the directory)
-3) cd per15 (changes the directory to per15)  
+Note: ieng6 wasn't letting me log in anymore, so I used ieng6-202 to remote connect to for these screenshots)  
+1) pwd (tells you what directory your currently in)  
+![Image](terminalSC3.png)
+2) ls (tells you what is in the directory)  
+![Image](terminalSC4.png)
+3) cat per15 (will return the contents of perl5, since it is a folder not a file, it tells us that perl5 is a directory)
+![Image](terminalSC5.png)
+4) cd per15 (changes the directory to perl5)  
+5) ls perl5 (tells us the file names in the directory, there's nothing in the directory so nothing happened)
+![Image](terminalSC6.png)
