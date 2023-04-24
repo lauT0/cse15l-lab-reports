@@ -1,5 +1,6 @@
 # Lab Report 1
-## How to remotely connect to your course specific account:
+How to remotely connect to your course specific account:  
+***
 
   ## Installations  
   First you will need to install Visual Studio Code in order to remotely connect. Go to the [VS Code Download page](https://code.visualstudio.com/download) to download and install it (I already have VS code on my computer so I skipped this step).
@@ -25,15 +26,20 @@ in the terminal, but with your account name. It will prompt you for a password, 
   It might ask you if you want to continue to log in, which you will type yes. Mine did not ask me this question.
   
 ***
-  ## Run some commands  
+  ## Run some commands
 Now you should be able to run some commands. Here are some commands I ran:  
 Note: ieng6 wasn't letting me log in anymore, so I used ieng6-202 to remote connect to for these screenshots)  
-1) `pwd` (tells you what directory your currently in)  
+1) ```pwd``` 
+  (tells you what directory your currently in)  
 ![Image](terminalSC3.png)  
-2) `ls` (tells you what is in the directory)  
+2) ```ls``` 
+  (tells you what is in the directory)  
 ![Image](terminalSC4.png)  
-3) `cat per15` (will return the contents of perl5, since it is a folder not a file, it tells us that perl5 is a directory)  
+3) ```cat per15``` 
+  (will return the contents of perl5, since it is a folder not a file, it tells us that perl5 is a directory)  
 ![Image](terminalSC5.png)  
-4) `cd per15` (changes the directory to perl5)  
-5) `ls perl5` (tells us the file names in the directory, there's nothing in the directory so nothing happened)  
+4) ```cd per15``` 
+  (changes the directory to perl5)  
+5) ```ls perl5``` 
+  (tells us the file names in the directory, there's nothing in the directory so nothing happened)  
 ![Image](terminalSC6.png)
