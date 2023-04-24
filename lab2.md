@@ -45,7 +45,7 @@ class StringServer {
         Server.start(port, new Handler());
     }
 }
-```
+```  
 
 Screenshots of the server working:  
 1. typing in `http://localhost:4000/add-message?s=yes`:  
