@@ -50,10 +50,10 @@ class StringServer {
 Screenshots of the server working:  
 1. typing in `http://localhost:4000/add-message?s=yes`:  
 ![Image](StrServerSC1.png)  
-  The methods called after I loaded this in the browser is `handleRequest(URI url)` with the arguement url being `http://localhost:4000/add-message?s=yes`. The field of Handler, stringOutput, was an empty string `""` before the handleRequest method was called. After its called, stringOutput is updated to equal `yes\n`.
+  The methods called after I loaded this in the browser is `handleRequest(URI url)` with the arguement `url` set to `http://localhost:4000/add-message?s=yes`. The field of Handler, stringOutput, was initialized as an empty string `""` before the handleRequest method was called. After its called, stringOutput is updated to be `"yes\n"`.
 2. typing in `http://localhost:4000/add-message?s=nope`:  
 ![Image](StrServerSC2.png)  
-  The methods called after I loaded this second url in the browser is `handleRequest(URI url)` with the arguement url being `http://localhost:4000/add-message?s=nope`. The field, stringOutput, was the string `yes\n` and is updated to equal `yes\nnope\n`.
+  The methods called after I loaded this second url in the browser is `handleRequest(URI url)` with the arguement url being `http://localhost:4000/add-message?s=nope`. The field, stringOutput, was the string `"yes\n"` and is updated to equal `"yes\nnope\n"`.
 
 ## Part 2:
 
