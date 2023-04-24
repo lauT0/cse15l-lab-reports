@@ -71,11 +71,11 @@ Failure inducing input (JUnit test):
 Input that doesn't produce failure (JUnit test):  
 ```
 @Test 
-	public void testReverseInPlace() {
+  public void testReverseInPlace() {
     int[] input1 = {3,3};
     ArrayExamples.reverseInPlace(input1);
     assertArrayEquals(new int[]{3,3}, input1);
-	}
+  }
 ```
 JUint output in terminal:  
 ![Image](JUnitSC.png)  
@@ -99,7 +99,7 @@ static void reverseInPlace(int[] arr) {
     }
   }
 ```  
-The changes I made were to use a temporary variable `temp` to store the value at the index of the array being replaced, `arr[i]`, by `arr[arr.length-i-1]`. Then I can set `arr[arr.length-i-1]` to `temp` to reverse there order. I also divided the `arr.length` in the for loop by 2, so it will only go through half the list. At half the list, the list will be fully reversed, if we go through the whole list, the list will reverse back to the orginal order.
+The changes I made were to use a temporary variable `temp` to store the value at the index of the array being replaced, `arr[i]`, by `arr[arr.length-i-1]`. Then I can set `arr[arr.length-i-1]` to `temp` to reverse there order. I also divided the `arr.length` in the for loop by 2, so it will only go through half the list. At half the list, the list will be fully reversed, if we go through the whole list, the list will reversed back to the orginal order.
 
 
 ## What I learned:  
