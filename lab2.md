@@ -78,7 +78,7 @@ Input that doesn't produce failure (JUnit test):
 	}
 ```
 JUint output in terminal:  
-![Image](JUintSC.png)  
+![Image](JUnitSC.png)  
 
 Original Code:
 ```
