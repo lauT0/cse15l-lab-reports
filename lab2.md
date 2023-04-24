@@ -101,7 +101,6 @@ static void reverseInPlace(int[] arr) {
 ```  
 The changes I made were to use a temporary variable `temp` to store the value at the index of the array being replaced, `arr[i]`, by `arr[arr.length-i-1]`. Then I can set `arr[arr.length-i-1]` to `temp` to reverse there order. I also divided the `arr.length` in the for loop by 2, so it will only go through half the list. At half the list, the list will be fully reversed, if we go through the whole list, the list will reverse back to the orginal order.
 
-***
 
-# What I learned:  
+## What I learned:  
 Something new I learned was the process of writing code that will run on a webpage when the webpage is loaded. I thought that this was really interesting that the handleRequest method just uses conditionals to run and uses the actual URL typed into the browser as a argument and isn't some super complicated method. 
