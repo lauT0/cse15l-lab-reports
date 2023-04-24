@@ -46,12 +46,12 @@ class StringServer {
     }
 }
 ```
-  
+
 Screenshots of the server working:  
-  1. typing in `http://localhost:4000/add-message?s=yes`:
-  ![Image](StrServerSC1.png)  
-  2. typing in `http://localhost:4000/add-message?s=nope`:  
-  ![Image](StrServerSC2.png)  
+1. typing in `http://localhost:4000/add-message?s=yes`:  
+![Image](StrServerSC1.png)  
+2. typing in `http://localhost:4000/add-message?s=nope`:  
+![Image](StrServerSC2.png)  
 
 ## Part 2:
 
