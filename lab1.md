@@ -1,9 +1,10 @@
 # Lab Report 1
 How to remotely connect to your course specific account:  
+
 ***
 
-  Installations
-  -------------
+  ## Installations
+  
   First you will need to install Visual Studio Code in order to remotely connect. Go to the [VS Code Download page](https://code.visualstudio.com/download) to download and install it (I already have VS code on my computer so I skipped this step).
 My editor looks like this when it is opened:
   ![Image](VScodeSC.png)
@@ -13,7 +14,8 @@ On the set up wizard, I changed the default editor to VS code, besides that, kee
   ![Image](GitInstall.png)
   
 ***
-  ## Remotely connecting  
+  ## Remotely connecting 
+  
   To remotely connect to your course specific account, first set Git Bash to be your default terminal. I followed the steps from [Stackoverflow](https://stackoverflow.com/a/50527994), to do this.
 Now open a new terminal and it should be a Git Bash terminal.
 
@@ -28,6 +30,7 @@ in the terminal, but with your account name. It will prompt you for a password, 
   
 ***
   ## Run some commands
+  
 Now you should be able to run some commands. Here are some commands I ran:  
 Note: ieng6 wasn't letting me log in anymore, so I used ieng6-202 to remote connect to for these screenshots)  
 1) ```pwd``` 
