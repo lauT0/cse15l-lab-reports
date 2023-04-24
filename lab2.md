@@ -59,18 +59,27 @@ Screenshots of the server working:
 
 Bug: `ArrayExamples.java` in the method: `reverseInPlace`
 
-Failure inducing input (JUnit test):
+Failure inducing input (JUnit test):  
 ```
 @Test 
-public void testReverseInPlaceMulti2() {
-    int[] input1 = {3,2,1};
+  public void testReverseInPlaceMulti() {
+    int[] input1 = {3,2,1,0};
     ArrayExamples.reverseInPlace(input1);
-    assertArrayEquals(new int[]{1,2,3}, input1);
-}
-  ```
-Input that doesn't produce failure (JUnit test):
+    assertArrayEquals(new int[]{0,1,2,3}, input1);
+	}
 ```
+Input that doesn't produce failure (JUnit test):  
 ```
+@Test 
+	public void testReverseInPlace() {
+    int[] input1 = {3,3};
+    ArrayExamples.reverseInPlace(input1);
+    assertArrayEquals(new int[]{3,3}, input1);
+	}
+```
+JUint output in terminal:  
+![Image](JUintSC.png)  
+
 Original Code:
 ```
  // Changes the input array to be in reversed order
