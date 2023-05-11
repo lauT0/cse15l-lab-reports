@@ -72,6 +72,7 @@ $ grep -v "a" technical/plos/journal.pbio.0020001.txt
 
 ```
   
+Here I used '^$' to get rid of all the empty lines: (Source: ChatGPT)
 ```
 $ grep -v '^$' technical/government/Media/5_Legal_Groups.txt 
 5 Legal Groups at 1 Locale To Serve the February 3, 2002
