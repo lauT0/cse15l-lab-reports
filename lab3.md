@@ -2,7 +2,7 @@
   
 ## grep examples:
 
-1) using the -r option to search recursively within a directory:
+1) using the -r option to search recursively within a directory. Found with ChatGPT
 ```
 $ grep -r "strategy" technical/government/About_LSC
 technical/government/About_LSC/commission_report.txt:is a survival strategy, permitting them to survive their periods of
@@ -32,7 +32,7 @@ technical/plos/journal.pbio.0020156.txt:        open-access publication, the Ame
 technical/plos/journal.pbio.0020156.txt:        author charges and other means,” John Hawley, the executive director of the ASCI writes,
 ```
   
-2) using -v option to inverse-search, which will exclude any phrase I want and print the rest to the terminal.
+2) using -v option to inverse-search, which will exclude any phrase I want and print the rest to the terminal. Found with ChatGPT
 ```
 $ grep -v "a" technical/plos/journal.pbio.0020001.txt
 
@@ -127,7 +127,7 @@ office equipment and such. He promised that they would be getting
 in touch with us later on the subject.
 ```
   
-3) using -A num option to get num amount of lines after the matching phrase  
+3) using -A num option to get num amount of lines after the matching phrase. Found with ChatGPT
 ```
 $ grep -A 3 "criminal" technical/government/Media/Advocate_for_Poor.txt 
 landlord-tenant disputes and even criminal cases are the specialty
@@ -143,7 +143,7 @@ were graduating with staggering debts and also couldn't afford to
 work with the poor.
 ```
   
-4) using -i to ignore case
+4) using -i to ignore case. Found with ChatGPT
 ```
 $ grep -i "el" technical/government/Media/A_helping_hand.txt
 A helping hand for helping hands
