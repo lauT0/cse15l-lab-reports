@@ -3,9 +3,9 @@
   note: all commands were found with ChatGPT, this lab report includes a section at the bottom containing all input and output to ChatGPT used.
 ## grep examples:
 
-1) using the `grep -r <String> <path to directory>` command to search recursively within a directory. Found with ChatGPT
-    - this command looks through a whole directory and get all files that contain the String you searched for, then for each file, gives the line of text where the String appeared on.
-    - If you don't know what files contain a certain String in a directory, this will be useful to find which files have that String. Additionally, if you are looking for a particular file and only remember one String from it, this command gives you all the files that match the String, and the line that they appear on for context. 
+1) using the `grep -r <String> <path to directory>` command to search recursively within a directory. Found with ChatGPT  
+    - this command looks through a whole directory and get all files that contain the String you searched for, then for each file, gives the line of text where the String appeared on.  
+    - If you don't know what files contain a certain String in a directory, this will be useful to find which files have that String. Additionally, if you are looking for a particular file and only remember one String from it, this command gives you all the files that match the String, and the line that they appear on for context.  
 ```
 $ grep -r "strategy" technical/government/About_LSC
 technical/government/About_LSC/commission_report.txt:is a survival strategy, permitting them to survive their periods of
@@ -24,7 +24,7 @@ technical/government/About_LSC/Strategic_report.txt:later, in 1998, state planni
 technical/government/About_LSC/Strategic_report.txt:primary strategy for enhancing client access to services. We have
 ```  
 - In the above output, I searched recursively in the technical/government/About_LSC directory to find which files contain the phrase "strategy".
-The terminal output is all the files in that directory that contain "strategy", for each file, it gives the line that "strategy" appeared on. If it appeared multiple times in one file, it repeats the file name and gives the line it appeared on for each instance.
+The terminal output is all the files in that directory that contain "strategy", for each file, it gives the line that "strategy" appeared on. If it appeared multiple times in one file, it repeats the file name and gives the line it appeared on for each instance.  
 ```
 $ grep -r "SCI" technical/plos
 technical/plos/journal.pbio.0020001.txt:        (SCI). North America and Europe clearly dominate the number of scientific publications
@@ -35,13 +35,13 @@ technical/plos/journal.pbio.0020001.txt:        scientific community? We used SC
 technical/plos/journal.pbio.0020001.txt:        developed regions are listed by the SCI than similar journals from developing regions
 technical/plos/journal.pbio.0020156.txt:        open-access publication, the American Society for Clinical Investigation (ASCI) has since
 technical/plos/journal.pbio.0020156.txt:        author charges and other means,” John Hawley, the executive director of the ASCI writes,
-```
+```  
 - In the above output, I searched recursively in the technical/plos directory to find which files contain the phrase "SCI".
-The terminal output is all the files in that directory that contain "strategy", for each file, it gives the line that "strategy" appeared on.
+The terminal output is all the files in that directory that contain "strategy", for each file, it gives the line that "strategy" appeared on.  
   
 2) using `grep -v <String> <file path>` command to inverse-search, which will exclude any phrase I want and print the rest to the terminal. Found with ChatGPT
     - this command returns all the lines from the file that don't contain a particular phrase, including blank lines. 
-    - It could be useful, if for example, I have a file with some data on different college majors and I wanted to examine data on all majors except for CSE majors. I could use `grep -v` to return all data except for CSE major data. 
+    - It could be useful, if for example, I have a file with some data on different college majors and I wanted to examine data on all majors except for CSE majors. I could use `grep -v` to return all data except for CSE major data.  
 ```
 $ grep -v "a" technical/plos/journal.pbio.0020001.txt
 
@@ -79,10 +79,10 @@ $ grep -v "a" technical/plos/journal.pbio.0020001.txt
 
 
 
-```
+```  
 - in the above output, I used the -v option to exclude all lines of text with "a" in the file, technical/plos/journal.pbio.0020001.txt.
-It returned all the lines without "a".
-  
+It returned all the lines without "a".  
+
 ```
 $ grep -v '^$' technical/government/Media/5_Legal_Groups.txt 
 5 Legal Groups at 1 Locale To Serve the February 3, 2002
@@ -136,8 +136,8 @@ ways to go, with a bit more than half of the $4 million projected
 cost received so far. There still needed to be furnishings and
 office equipment and such. He promised that they would be getting
 in touch with us later on the subject.
-```
-- in the above output, I used `'^$'` to get rid of all the empty lines: (Source: ChatGPT). I used the inverse searach on technical/government/Media/5_Legal_Groups.txt and it returned all the lines excluding the empty lines.
+```  
+- in the above output, I used `'^$'` to get rid of all the empty lines: (Source: ChatGPT). I used the inverse searach on technical/government/Media/5_Legal_Groups.txt and it returned all the lines excluding the empty lines.  
   
 3) using `grep -A <num> <String> <File path>` command to get num amount of lines after the matching String. Found with ChatGPT
     - this could be useful when searching a long text file for information on a topic. For example, if I had a book as a text file, and I wanted to quickly look for a the definition of a term, but the difinition is more than one line long, I can use `grep -A 4` to get the whole definition (with a bigger number if the definition was longer than 4 lines). 
@@ -147,17 +147,16 @@ landlord-tenant disputes and even criminal cases are the specialty
 of his East New York Legal Services Corp. on New Lots Ave.
 The office, in a former bodega, was Mazzariello's idea, and he
 got some help from high places early on.
-```
-- In the above output, I searched the technical/government/Media/Advocate_for_Poor.txt file for the word "criminal" and the 3 lines after that, and it outputed the line with "criminal" and the 3 lines after.
-  
+```  
+- In the above output, I searched the technical/government/Media/Advocate_for_Poor.txt file for the word "criminal" and the 3 lines after that, and it outputed the line with "criminal" and the 3 lines after.  
+
 ```
 $ grep -A 2 "children" technical/government/Media/A_helping_hand.txt 
 affects children. Mintie noticed that health-care professionals
 were graduating with staggering debts and also couldn't afford to
 work with the poor.
-```
-- In the above output, I searched the technical/government/Media/A_helping_hand.txt file for the word "children" and the 2 lines after that. It outputed the line with "children" and then 2 lines after that.
-  
+```  
+- In the above output, I searched the technical/government/Media/A_helping_hand.txt file for the word "children" and the 2 lines after that. It outputed the line with "children" and then 2 lines after that.  
   
 4) using `grep -i <String> <File path>` to ignore case. Found with ChatGPT
     - this is useful to find if a file contians words regardless of case. For example, if I wanted to find where I wrote a specific word, but can't remember if I capitalized it or not, I can use this option to see if a file had the word.
@@ -186,8 +185,8 @@ model for other professions.
 -- the closest legal aid office is in El Monte and represents
 700,000 poor people throughout the San Fernando, San Gabriel and
 Services of Los Angeles County, the legal aid office in El Monte.
-```
-- in the output above, I searched for the String "el" and with the ignore case option. Each line in the output contains "el" or "EL" or "El" or "eL".
+```  
+- in the output above, I searched for the String "el" and with the ignore case option. Each line in the output contains "el" or "EL" or "El" or "eL".  
 
 ```
 $ grep -i "foundation" technical/911report/chapter-2.txt
