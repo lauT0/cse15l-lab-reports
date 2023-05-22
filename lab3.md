@@ -1,4 +1,4 @@
-# Lab Report 3  
+# Lab Report 3  :)
 
   note: all commands were found with ChatGPT, this lab report includes a section at the bottom containing all input and output to ChatGPT used.
 ## grep examples:
