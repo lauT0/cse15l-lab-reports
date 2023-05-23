@@ -49,14 +49,14 @@ $ grep -v "a" technical/plos/journal.pbio.0020001.txt
 
 
 
-        serious problems not only for the scientific community in the developing countries, but for
+serious problems not only for the scientific community in the developing countries, but for
 
 
 
 
 
 
-        2002).
+2002).
 
 
 
@@ -65,24 +65,23 @@ $ grep -v "a" technical/plos/journal.pbio.0020001.txt
 
 
 
-        regions.
-        In
-        However, publishing in
+regions.
+In
+However, publishing in
 
 
-        world.
+world.
 
 
 
 
-        built.
+built.
 
 
 
 ```  
 - in the above output, I used the -v option to exclude all lines of text with "a" in the file, technical/plos/journal.pbio.0020001.txt.
 It returned all the lines without "a".  
-
 ```
 $ grep -v '^$' technical/government/Media/5_Legal_Groups.txt 
 5 Legal Groups at 1 Locale To Serve the February 3, 2002
