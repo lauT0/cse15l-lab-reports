@@ -37,7 +37,7 @@ technical/plos/journal.pbio.0020156.txt:        open-access publication, the Ame
 technical/plos/journal.pbio.0020156.txt:        author charges and other means,” John Hawley, the executive director of the ASCI writes,
 ```  
 - In the above output, I searched recursively in the technical/plos directory to find which files contain the phrase "SCI".
-The terminal output is all the files in that directory that contain "strategy", for each file, it gives the line that "strategy" appeared on.  
+The terminal output is all the files in that directory that contain "SCI", for each file, it gives the line that "SCI" appeared on.  
   
 2) using `grep -v <String> <file path>` command to inverse-search, which will exclude any phrase I want and print the rest to the terminal. Found with ChatGPT
 - this command returns all the lines from the file that don't contain a particular phrase, including blank lines. 
