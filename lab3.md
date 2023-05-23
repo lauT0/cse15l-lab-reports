@@ -41,44 +41,44 @@ The terminal output is all the files in that directory that contain "strategy", 
   
 2) using `grep -v <String> <file path>` command to inverse-search, which will exclude any phrase I want and print the rest to the terminal. Found with ChatGPT
 - this command returns all the lines from the file that don't contain a particular phrase, including blank lines. 
-- It could be useful, if for example, I have a file with some data on different college majors and I wanted to examine data on all majors except for CSE majors. I could use `grep -v` to return all data except for CSE major data.
+- It could be useful, if for example, I have a file with some data on different college majors and I wanted to examine data on all majors except for CSE majors. I could use `grep -v` to return all data except for CSE major data. (note: '>' used to indicate empty line due to markdown to html issues).
 ```
 $ grep -v "a" technical/plos/journal.pbio.0020001.txt
-
-
-
-
-
+>
+>
+>
+>
+>
 serious problems not only for the scientific community in the developing countries, but for
-
-
-
-
-
-
+>
+>
+>
+>
+>
+>
 2002).
-
-
-
-
-
-
-
-
+>
+>
+>
+>
+>
+>
+>
+>
 regions.
 In
 However, publishing in
-
-
+>
+>
 world.
-
-
-
-
+>
+>
+>
+>
 built.
-
-
-
+>
+>
+>
 ```  
 - in the above output, I used the -v option to exclude all lines of text with "a" in the file, technical/plos/journal.pbio.0020001.txt.
 It returned all the lines without "a".
