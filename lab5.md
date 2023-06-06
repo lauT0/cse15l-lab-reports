@@ -2,10 +2,8 @@
 ## Part 1 Debugging Senario:  
 1. **Student original post:**  
 * I'm using Windows 11 and VScode.  
-
 * When I run the grade.sh for with the repository: https://github.com/ucsd-cse15l-f22/list-methods-nested. The output in my code is "incorrect file/file missing" when it should have found the file. I'm not sure why this is happening it gives correct output for all other sample repos.  
-  ![image](lab5sc1.png)  
-
+* ![image](lab5sc1.png)  
 * The error is occuring somewhere in line 11 to 21 in my grade.sh script, where it finds all the files in the repo, and determines if it is the correct file.  
   
 2. **TA response:**  
@@ -26,43 +24,45 @@
   * The file & directory structure needed: https://github.com/lauT0/list-examples-gradert0.git  
   * The contents of each file before fixing the bug:  
     grade.sh:  
-    ```
-    CPATH='.:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar'
+    
+```
+CPATH='.:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar'
 
-    rm -rf student-submission
-    rm -rf grading-area
+rm -rf student-submission
+rm -rf grading-area
 
-    mkdir grading-area
+mkdir grading-area
 
-    git clone $1 student-submission
-    echo 'Finished cloning'
+git clone $1 student-submission
+echo 'Finished cloning'
 
-    files=$(find student-submission/*)
-    for file in $files
-    do
-        if [[ -f $file ]] && [[ $file == student-submission/ListExamples.java ]]
-            then 
-                echo 'submitted correct file'
-        else
-            echo 'incorrect file/file missing'
-            exit
-        fi
-    done
-
-    cp student-submission/ListExamples.java grading-area
-    cp TestListExamples.java grading-area
-    cp -r lib grading-area
-
-    cd grading-area
-    javac -cp ".;lib/hamcrest-core-1.3.jar;lib/junit-4.13.2.jar" *.java > output.txt 2>&1
-    if [[ $? -ne 0 ]]
-        then exit
+files=$(find student-submission/*)
+for file in $files
+do
+    if [[ -f $file ]] && [[ $file == student-submission/ListExamples.java ]]
+        then 
+            echo 'submitted correct file'
+    else
+        echo 'incorrect file/file missing'
+        exit
     fi
-    java -cp ".;lib/junit-4.13.2.jar;lib/hamcrest-core-1.3.jar" org.junit.runner.JUnitCore TestListExamples > output.txt 2>&1
+done
 
-    tail -n +2 output.txt > result.txt
-    head -n 1 result.txt > result1.txt
-    ```  
+cp student-submission/ListExamples.java grading-area
+cp TestListExamples.java grading-area
+cp -r lib grading-area
+
+cd grading-area
+javac -cp ".;lib/hamcrest-core-1.3.jar;lib/junit-4.13.2.jar" *.java > output.txt 2>&1
+if [[ $? -ne 0 ]]
+    then exit
+fi
+java -cp ".;lib/junit-4.13.2.jar;lib/hamcrest-core-1.3.jar" org.junit.runner.JUnitCore TestListExamples > output.txt 2>&1
+
+tail -n +2 output.txt > result.txt
+head -n 1 result.txt > result1.txt
+```  
+    
   * The full command line (or lines) you ran to trigger the bug:  
     `bash grade.sh https://github.com/ucsd-cse15l-f22/list-methods-nested`  
   * A description of what to edit to fix the bug:  
