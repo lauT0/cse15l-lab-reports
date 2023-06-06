@@ -2,7 +2,7 @@
 ## Part 1 Debugging Senario:  
 1. **Student original post:**  
 * I'm using Windows 11 and VScode.  
-* When I run the grade.sh for with the repository: https://github.com/ucsd-cse15l-f22/list-methods-nested. The output in my code is "incorrect file/file missing" when it should have found the file. I'm not sure why this is happening it gives correct output for all other sample repos.  
+* When I run the grade.sh for with the repository: [https://github.com/ucsd-cse15l-f22/list-methods-nested](https://github.com/ucsd-cse15l-f22/list-methods-nested). The output in my code is "incorrect file/file missing" when it should have found the file. I'm not sure why this is happening it gives correct output for all other sample repos.  
 * ![image](lab5sc1.png)  
 * The error is occuring somewhere in line 11 to 21 in my grade.sh script, where it finds all the files in the repo, and determines if it is the correct file.  
   
@@ -21,7 +21,7 @@
    To resolve this, I used `files=$(find student-submission -name "*.java")` at line 11, which only stores the java files. Then at line 14, in the if statement, I changed  `[[ $file == student-submission/ListExamples.java ]]` to `[[ $file == */ListExamples.java ]]`, so `student-submission/pa1/ListExamples.java` will return true. Then I copy that file into the the grading area.  
 
 4. **All the information needed about the setup:**  
-  * The file & directory structure needed: https://github.com/lauT0/list-examples-gradert0.git  
+  * The file & directory structure needed: [My Repository](https://github.com/lauT0/list-examples-gradert0.git)  
   * The contents of each file before fixing the bug:  
     grade.sh:  
     
